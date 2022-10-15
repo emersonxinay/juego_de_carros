@@ -1,0 +1,105 @@
+* {  
+  margin: 0;  
+  padding: 0;  
+  font-family: 'Silkscreen', cursive;
+  /* font-family: Arial, Helvetica, sans-serif; */
+
+}  
+.game{  
+/* background-image: url(bg.jpg);   */
+
+background: linear-gradient(90deg, rgba(131,7,100,1) 0%, rgba(27,91,170,1) 65%, rgba(235,7,33,1) 100%);
+background-repeat: no-repeat;  
+background-size: 100% 100%;  
+}  
+.hide {  
+  display: none;  
+}  
+/* el mensaje del juego */
+.startScreen {  
+  width: auto;  
+  height: auto; 
+  padding: 2rem;
+  border-radius: 3rem; 
+  line-height: 20px;  
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  z-index: 2;  
+  margin: auto;  
+  background-color: rgb(220, 244, 8);  
+  text-align: center;  
+  border-bottom: 2px solid rgb(132, 197, 197);  
+}  
+/* el score de puntaje */
+.score, .highScore{
+  z-index: 3;
+}
+.score,  
+.highScore {  
+  position: absolute;  
+  top: 10px;  
+  left: 20px;
+  margin-top: 5rem;
+  text-align: center;  
+  background-color: rgb(192, 233, 7);  
+  width: 200px;  
+  color: rgb(45, 59, 40);  
+  line-height: 40px;  
+  border-radius: 4px;  
+  font-size: 1.2em;  
+}  
+
+/* boton de jugar  */
+.jugar {  
+  cursor: pointer; 
+  font-weight: 900;
+  border-radius: 4rem; 
+  color: azure;
+  position: relative;
+  text-align: center;
+  padding: 0.8rem 0.1rem 0.0rem 0.1rem;
+  background: linear-gradient(90deg, rgba(131,7,100,1) 0%, rgba(27,91,170,1) 65%, rgb(206, 49, 67) 100%);
+}  
+/* la carretera del auto */
+.gameArea {  
+  height: 100vh;  
+  width: 25rem;  
+  margin: auto;  
+  position: relative;  
+  background-color: rgb(4, 4, 4);  
+  overflow: hidden;  
+  border-left: 4px dashed white;  
+  border-right: 4px dashed white;  
+}  
+/* nuestro carro que se mueve */
+.car{  
+  background: url('../img/card_ida.png');  
+  background-repeat: no-repeat;  
+  background-size: 100% 100%;  
+  height: 75px;  
+  width: 50px;  
+  position: absolute;  
+  top: 520px; 
+  border-radius: 30rem; 
+}  
+/* el carro que se opone en el camino */
+.Opponents {  
+  background: url('../img/card_op.png');  
+  background-repeat: no-repeat;  
+  background-size: 100% 100%;  
+  height: 75px;  
+  width: 50px;  
+  position: absolute;  
+  top: 520px;  
+}  
+
+/* las lineas de carretera */
+.roadLines {  
+  height: 100px;  
+  width: 10px;  
+  background-color: white;  
+  position: absolute;  
+  margin-left: 195px;  
+}  
